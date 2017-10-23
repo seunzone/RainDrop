@@ -1,0 +1,23 @@
+{
+  "name": "raindrop",
+  "version": "1.0.0",
+  "description": "Write a program that converts a number to a string, the contents of which depends on the number's prime factors.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seunzone/RainDrop.git"
+  },
+  "author": "Seun Daramola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seunzone/RainDrop/issues"
+  },
+  "homepage": "https://github.com/seunzone/RainDrop#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
