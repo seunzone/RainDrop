@@ -1,29 +1,28 @@
 module.exports = {
 	rainDrops: (number) => {
-		let num = parseInt(number, 10);
-		if (isNaN(num) === false && num !== "") {
-			if (Math.floor(num) === num && num >= 0) {
-				let result = "";
-				let primeFactors = [3,5,7];
-				if (num % primeFactors[0] === 0 || num % primeFactors[1] === 0 || num % primeFactors[2] === 0) {
-					if (num % primeFactors[0] === 0) {
-						result += 'Pling';
-					}
-					if (num % primeFactors[1] === 0) {
-						result += 'Plang';
-					}
-					if (num % primeFactors[2] === 0) {
-						result += 'Plong';
-					}
-					return result;
-				}
-				else {
-					return number;
-				}
-			}
-			else {
-				return 'Not a number';
-			}
-		}
+    if(!number){
+      return "You entered an empty value";
+    }
+  if(isNaN(number)){
+      return "The value you entered is not a number";
+  }
+
+
+  let outputString = "";
+  if(number % 3 === 0 || number % 5 === 0 || number % 7 === 0){
+      if(number % 3 === 0){
+          outputString += "Pling";
+      }
+      if(number % 5 === 0){
+          outputString += "Plang";
+      }
+      if(number % 7 === 0){
+          outputString += "Plong";
+      }
+  }else{
+      outputString = number.toString();
+  }
+  
+  return outputString;
 	}
 }
