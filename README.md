@@ -16,8 +16,12 @@ Write a program that converts a number to a string, the contents of which depend
 - The prime factors of 34 are 2 and 17.
   - Raindrop-speak doesn't know what to make of that,
     so it just goes with the straightforward "34".
-
-## Run the Test
+    
+# Install Dependencies
+```bash
+npm install
+```
+# Run the Test
 ```bash
 npm run test
 ```
